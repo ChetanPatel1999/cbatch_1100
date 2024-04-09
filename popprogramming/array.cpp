@@ -3,7 +3,7 @@
 using namespace std;
 int main()
 {
-    int n,i;
+    int n,i,j;
     cout<<"enter arry size :";
     cin>>n;
     int arr[n];
@@ -27,9 +27,9 @@ int main()
             f=1;
         }
         else{
-            for(i=2;i<num;i++)
+            for(j=2;j<num;j++)
             {
-                if(num%i==0)
+                if(num%j==0)
                 {
                     f=1;
                     break;
