@@ -6,19 +6,21 @@ class pen
  int price;
  float rati;
  public:
- void setdata(string s,int a,float b)// methods
- {
+ void setdata(string s,int a,float b);//declaration
+ void display();
+};
+void pen::setdata(string s,int a,float b)//(:: scop resolution operator)
+{
     name=s;
     price=a;
     rati=b;
- }
- void display()
- {
+}
+void pen::display()
+{
     cout<<"pen name = "<<name<<endl;
     cout<<"pen price = "<<price<<endl;
     cout<<"pen rate = "<<rati<<endl;
- }
-};
+}
 int main()
 {
  pen p1,p2,p3;
@@ -28,6 +30,7 @@ int main()
  p2.display();
  p3.setdata("goldex",10,4.5);
  p3.display();
+
 
     return 0;
 }
