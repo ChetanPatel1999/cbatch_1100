@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/CLASSROOM01/Documents/gitcode/cbatch_1100/popprogramming",
-      "program": "c:/Users/CLASSROOM01/Documents/gitcode/cbatch_1100/popprogramming/build/Debug/outDebug",
+      "cwd": "c:/Users/CLASSROOM01/Documents/gitcode/cbatch_1100/opsprogramming",
+      "program": "c:/Users/CLASSROOM01/Documents/gitcode/cbatch_1100/opsprogramming/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

@@ -1,1 +1,2 @@
-1.printreportcard();
+nt totalpass;
+     int totalfail
