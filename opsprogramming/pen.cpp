@@ -23,13 +23,26 @@ void pen::display()
 }
 int main()
 {
- pen p1,p2,p3;
- p1.setdata("cello",5,3.5);
- p1.display();
- p2.setdata("parker",512,5);
- p2.display();
- p3.setdata("goldex",10,4.5);
- p3.display();
+ pen p[5];
+ int i,a,b;
+ string s;
+
+ for(i=0;i<5;i++)
+ {
+    cout<<"enter pen name :";
+    cin>>s;
+    cout<<"enter pen price :";
+    cin>>a;
+    cout<<"enter pen rating :";
+    cin>>b;
+    p[i].setdata(s,a,b);
+    cin.ignore();
+ }
+ for(i=0;i<5;i++)
+ {
+    p[i].display();
+ }
+
 
 
     return 0;

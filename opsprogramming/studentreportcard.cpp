@@ -14,7 +14,7 @@ class student
        rno=r;
        per=p; 
     }
-    void printreportcard()
+    void printreportcard()// s1.printreportcard();
     {
         cout<<"reportcard of student ........."<<endl;
         cout<<"name of student : "<<name<<endl;
@@ -31,11 +31,15 @@ class student
         }
         cout<<"_______________________________________"<<endl;
     }
-    void totalresult()
+    static void totalresult()
     {
         cout<<"total pass = "<<totalpass<<endl;
         cout<<"total fail = "<<totalfail<<endl;
         cout<<"______________________________________"<<endl;
+    }
+    static void great()
+    {
+        cout<<"thanks for using my class"<<endl;
     }
 };
 int student::totalpass=0;
@@ -51,7 +55,8 @@ int main()
  s2.printreportcard();
  s3.printreportcard();
  s4.printreportcard();
- s1.totalresult();
+ student::totalresult();// static method called by class name
+ student::great();
  
 
     return 0;

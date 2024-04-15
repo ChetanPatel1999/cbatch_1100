@@ -1,2 +1,1 @@
-nt totalpass;
-     int totalfail
+or(i=0;i<5;i++)
