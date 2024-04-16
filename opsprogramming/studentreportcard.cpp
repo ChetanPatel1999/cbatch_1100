@@ -41,6 +41,18 @@ class student
     {
         cout<<"thanks for using my class"<<endl;
     }
+    static void avragepercentage(student obj1,student obj2)
+    {
+        cout<<"avrage percentage of "<<obj1.name<<" and "<<obj2.name<<" = "<<((obj1.per+obj2.per)/2.0)<<endl;
+    }
+    static void avragepercentage(student obj1,student obj2,student obj3)
+    {
+        cout<<"avrage percentage of "<<obj1.name<<" and "<<obj2.name<<" and "<<obj3.name<<" = "<<((obj1.per+obj2.per+obj3.per)/3.0)<<endl;
+    }
+    static void avragepercentage(student obj1,student obj2,student obj3,student obj4)
+    {
+        cout<<"avrage percentage of "<<obj1.name<<" and "<<obj2.name<<" and "<<obj3.name<<" and "<<obj4.name<<" = "<<((obj1.per+obj2.per+obj3.per+obj4.per)/4.0)<<endl;
+    }
 };
 int student::totalpass=0;
 int student::totalfail=0;
@@ -56,6 +68,11 @@ int main()
  s3.printreportcard();
  s4.printreportcard();
  student::totalresult();// static method called by class name
+ student::avragepercentage(s1,s2);
+ student::avragepercentage(s1,s3);
+ student::avragepercentage(s1,s2,s3);
+ student::avragepercentage(s1,s2,s3,s4);
+
  student::great();
  
 
