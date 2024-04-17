@@ -8,7 +8,7 @@ class student
     static int totalpass;
     static int totalfail;
     public:
-    void setdata(string s,int r,float p)
+     student(string s,int r,float p)
     {
        name=s;
        rno=r;
@@ -58,11 +58,10 @@ int student::totalpass=0;
 int student::totalfail=0;
 int main()
 {
- student s1,s2,s3,s4;
- s1.setdata("chetan",1001,85);
- s2.setdata("amay",1002,32);
- s3.setdata("anuj",1003,99.99);
- s4.setdata("ayushi",1004,23);
+ student s1("chetan",1001,85);
+ student s2 ("amay",1002,32);
+ student s3("anuj",1003,99.99);
+ student s4("ayushi",1004,23);
  s1.printreportcard();
  s2.printreportcard();
  s3.printreportcard();

@@ -6,7 +6,8 @@ class circle
     float area;
     float circumference;
     public:
-    void setradius(float r)
+
+    circle(float r)
     {
         radius=r;
     }
@@ -23,17 +24,16 @@ class circle
 };
 int main()
 {
-  circle c1,c2,c3;
   float r;
   cout<<"enter radius of circle : ";
   cin>>r;
-  c1.setradius(r);
+  circle c1(r);
   cout<<"enter radius of circle : ";
   cin>>r;
-  c2.setradius(r);
+  circle c2(r);
   cout<<"enter radius of circle : ";
   cin>>r;
-  c3.setradius(r);
+  circle c3(r);
   c1.calculatearea();
   c2.calculatearea();
   c3.calculatearea();

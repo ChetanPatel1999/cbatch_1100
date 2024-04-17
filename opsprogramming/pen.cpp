@@ -63,8 +63,5 @@ int main()
  }
  pen::astartname(p,n);
 
-
-
-
     return 0;
 }
