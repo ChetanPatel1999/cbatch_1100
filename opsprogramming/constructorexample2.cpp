@@ -9,7 +9,7 @@ class demo
     {
 
     }
-    demo(int a,int b)// paramiterized constructor
+    demo(int a,int b=13)// paramiterized constructor
     {
         var1=a;
         var2=b;
@@ -23,9 +23,7 @@ class demo
 };
 int main()
 {
- demo o1(12,34),o2(56,78);
- o1.display();
- o1.display();
+ demo o1(12,89),o2(56,78);
  o1.display();
  o2.display();
  return 0;
