@@ -1,1 +1,1 @@
- d5.display();
+s2.result(44);

@@ -18,6 +18,16 @@ class student
         cout<<"rno of student : "<<rno<<endl;
         cout<<"blood group of student : "<<blood<<endl;
     }
+   void  result(int per)
+   {
+    if(per>33)
+    {
+        cout<<"student pass "<<endl;
+    }
+    else{
+        cout<<"student fail "<<endl;
+    }
+   }
 };
 class biostd :public student
 {
@@ -56,6 +66,16 @@ class comstd :public student
         cout<<"marks busines : "<<busines<<endl;
         cout<<"marks ip : "<<ip<<endl;
     }
+    void  result(int per)
+   {
+    if(per>50)
+    {
+        cout<<"student pass "<<endl;
+    }
+    else{
+        cout<<"student fail "<<endl;
+    }
+   }
 };
 int main()
 {
@@ -66,11 +86,13 @@ int main()
     s1.setbiodata(56,78,90);
     s1.stddisplay();
     s1.biodisplay();
+    s1.result(45);
     cout<<"_________________________________________"<<endl;
     s2.setstddata("aman",2001,"A+");
     s2.stdcomdata(45,67,89);
     s2.stddisplay();
     s2.comdisplay();
+    s2.result(56);
      cout<<"_________________________________________"<<endl;
     return 0;
 }
