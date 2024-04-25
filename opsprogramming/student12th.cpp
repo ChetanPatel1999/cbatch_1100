@@ -6,7 +6,7 @@ class student
     string name;
     int rno;
     string blood;
-    void setstddata(string s1,int n,string s2)
+    student(string s1,int n,string s2)
     {
         name=s1;
         rno=n;
@@ -35,7 +35,7 @@ class biostd :public student
  int science;
  int pysics;
  public:
-   void setbiodata(int a,int b,int c)
+   biostd(string s1,int n,string s2,int a,int b,int c):student(s1,n,s2)
     {
         bio=a;
         science=b;
@@ -43,6 +43,7 @@ class biostd :public student
     }
     void biodisplay()
     {
+        stddisplay();
         cout<<"marks bio :"<<bio<<endl;
         cout<<"marks science : "<<science<<endl;
         cout<<"marks pysics : "<<pysics<<endl;
@@ -54,7 +55,7 @@ class comstd :public student
  int busines;
  int ip;
  public:
-   void stdcomdata(int a,int b,int c)
+  comstd(string s1,int n,string s2,int a,int b,int c):student(s1,n,s2)
     {
         account=a;
         busines=b;
@@ -62,6 +63,7 @@ class comstd :public student
     }
     void comdisplay()
     {
+        stddisplay();
         cout<<"marks account :"<<account<<endl;
         cout<<"marks busines : "<<busines<<endl;
         cout<<"marks ip : "<<ip<<endl;
@@ -79,18 +81,12 @@ class comstd :public student
 };
 int main()
 {
-    biostd s1;
-    comstd s2;
+    biostd s1("chetan",1001,"O+",56,78,90);
+    comstd s2("aman",2001,"A+",45,67,89);
     cout<<"_________________________________________"<<endl;
-    s1.setstddata("chetan",1001,"O+");
-    s1.setbiodata(56,78,90);
-    s1.stddisplay();
     s1.biodisplay();
     s1.result(45);
     cout<<"_________________________________________"<<endl;
-    s2.setstddata("aman",2001,"A+");
-    s2.stdcomdata(45,67,89);
-    s2.stddisplay();
     s2.comdisplay();
     s2.result(56);
      cout<<"_________________________________________"<<endl;
