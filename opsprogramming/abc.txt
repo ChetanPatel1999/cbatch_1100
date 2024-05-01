@@ -1,0 +1,4 @@
+hi this frist sentense write in file
+hi this second sentense write in file
+this data enter using varible
+my name is chetan
